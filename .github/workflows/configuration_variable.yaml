@@ -1,4 +1,4 @@
-name:configuration variable demo
+name: configuration variable demo
 on:
   workflow_dispatch
 env:
