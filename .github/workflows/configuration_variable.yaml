@@ -1,0 +1,16 @@
+name: demo on variables
+
+on: 
+  workflow_dispatch
+env:
+  cloud: google-cloud
+jobs:
+  greeting_job:
+    runs-on: ubuntu-latest
+    env:
+      Greeting: Hello
+    steps:
+      - name: "First env demo"
+        run: echo "My $cloud say $Greeting! with the day ${{var.weekday}}"
+        env:
+          first_name: Mahesh
