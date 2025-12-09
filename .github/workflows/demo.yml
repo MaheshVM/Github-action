@@ -14,5 +14,5 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build the sample work flow
-      run: echo "hello world"
+      run: echo "hello world ery good mornng"
         
