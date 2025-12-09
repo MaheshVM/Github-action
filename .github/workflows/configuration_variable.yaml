@@ -1,6 +1,5 @@
-name:configuration variable dispatch
-
-on: 
+name:configuration variable demo
+on:
   workflow_dispatch
 env:
   cloud: google-cloud
