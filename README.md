@@ -29,9 +29,13 @@ jobs:
 
 Variables and secrets :
 -----------------------
-
+1. env
 variable for single work flow
 env  
   can not be accessed with any other workflow
   so it is scoped
   we can define for job/ specific step
+2. configuration variables
+     can be used for multiple work flows
+     defined in repositorysetting/organization/environment setting
+  
