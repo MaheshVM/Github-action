@@ -11,6 +11,6 @@ jobs:
       Greeting: Hello
     steps:
       - name: "First env demo"
-        run: echo "My $cloud say $Greeting! with the day ${{var.weekday}}"
+        run: echo "My $cloud say $Greeting! with the day ${{vars.weekday}}"
         env:
           first_name: Mahesh
