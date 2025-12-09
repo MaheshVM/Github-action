@@ -26,3 +26,12 @@ jobs:
     - uses actions/checkout@v3    checkout the code from the repository
 
     - run: echo "hello world"
+
+Variables and secrets :
+-----------------------
+
+variable for single work flow
+env  
+  can not be accessed with any other workflow
+  so it is scoped
+  we can define for job/ specific step
