@@ -1,4 +1,4 @@
-name: demo on variables
+name:configuration variable
 
 on: 
   workflow_dispatch
