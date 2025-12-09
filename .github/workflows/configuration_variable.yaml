@@ -1,4 +1,4 @@
-name:configuration variable
+name:configuration variable dispatch
 
 on: 
   workflow_dispatch
