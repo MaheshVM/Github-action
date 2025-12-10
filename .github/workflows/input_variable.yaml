@@ -1,6 +1,5 @@
 name: Testing user input values
-on:
-  workflow_dispatch:
+on:workflow_dispatch:
     inputs:
       number1: 
         description: 'first number'
