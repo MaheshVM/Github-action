@@ -1,24 +1,26 @@
 name: Testing user input values
-on:workflow_dispatch:
-    inputs:
-      number1: 
-        description: 'first number'
-        default: '0'
-        required: true
-      number2:
-        description: 'second number'
-        default: '0'
-        required: true
+on:
+    workflow_dispatch:
+        inputs:
+          number1: 
+              description: 'first number'
+              default: '0'
+              required: true
+          number2:
+              description: 'second number'
+              default: '0'
+              required: true
 jobs:
   add_numbers:
-  runs_on: ubuntu_latest
+    runs-on: ubuntu-latest
 
     steps:
-    - name: add numbers
-      run: echo "::set-output name=$$((${{ inputs.number1 }} + ${{ inputs.number2 }}))"
-
-    - name: Display sum
-      run: echo "The sum of ${{ inputs.number1 }} and ${{ inputs.number2 }} is ${{ steps.sum.outputs.sum }}"
+      - name: Add numbers
+        id: sum
+        run: echo "::set-output name=sum::$((${{ inputs.number1 }} + ${{ inputs.number2 }}))"
+        
+      - name: Display sum
+        run: echo "The sum of ${{ inputs.number1 }} and ${{ inputs.number2 }} is ${{ steps.sum.outputs.sum }}"r1 }} and ${{ inputs.number2 }} is ${{ steps.sum.outputs.sum }}"
       
       
     
