@@ -38,4 +38,11 @@ env
 2. configuration variables
      can be used for multiple work flows
      defined in repositorysetting/organization/environment setting
+3. context variables from github metadata
+   based on condition we execute based on branch/environment/username
+   so we get related to repo/job
+   ${{ github.repository }}
+   ${{ github.workflow }}
+   ${{ github.trigger.actor }}
+   https://docs.github.com/en/actions/reference/workflows-and-actions/contexts
   
