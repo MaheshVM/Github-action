@@ -1,0 +1,21 @@
+name: Testing user input values
+on:
+  workflow_dispatch:
+    inputs:
+      number1: 
+        description: 'first number'
+        default: '0'
+        required: true
+      number2:
+        description: 'second number'
+        default: '0'
+        required: true
+jobs:
+  add_numbers:
+    runs_on: ubuntu_latest
+
+    steps:
+    - name: add numbers
+      
+      
+    
