@@ -45,4 +45,6 @@ env
    ${{ github.workflow }}
    ${{ github.trigger.actor }}
    https://docs.github.com/en/actions/reference/workflows-and-actions/contexts
+
+INPut for Manually triggered Work flow
   
